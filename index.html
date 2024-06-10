@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyajit Ray</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+
+        <nav class="hover"><ul>
+        <li><a href="index.html"><img src="sign.png" alt="Logo" class="logo">
+        </a></li>
+        
+        <li><a href="index.html">Home</a></li>
+      
+        <li><a href="films.html">Films</a></li>
+   
+        <li><a href="songs.html">Songs</a></li>
+
+        <li><a href="stories.html">Stories</a></li>
+
+        <li><a href="bio.html">Biography</a></li>
+        
+    </ul></nav>
+    <nav><ul>
+        <li><button id="popupButton" class="btn-login">  Login</button></li>
+         </ul></nav>
+</header><br>
+
+<div class="wrapper" id="popup">
+     <div class="form-box login">
+          <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><i class="fa-regular fa-envelope-open"></i></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="button1">Login</button>
+            <div class="login-register">
+                <p>Don't have an account?<a href="#" class="register-link">    Register</a></p>
+            </div>
+        </form>
+    </div>
+    <div id="popup">
+      <div class="form-box register">
+        <h2>Registration</h2>
+         <form action="#">
+          <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-key"></i></span>
+              <input type="text">
+              <label>Username</label>
+          </div>
+          <div class="input-box">
+              <span class="icon"><i class="fa-regular fa-envelope-open"></i></span>
+              <input type="email">
+              <label>Email</label>
+          </div>
+          <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password">
+              <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+              <label><input type="checkbox" required>I agree to the terms & conditions
+              </label>
+          </div>
+          <button type="submit" class="button1">Register</button>
+          <div class="login-register">
+              <p>Already have an account?<a href="#" class="login-link">    Login</a></p>
+          </div>
+      </form>
+    </div>
+    </div>
+    </div>
+
+    <div class="container"> <!-- carousel -->
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img width="70%" height="70%" src="pp1.webp">
+                    <div class="content">
+                        <div class="author"> </div>
+                        <div class="title">PATHER PANCHALI</div>
+                        <div class="topic"></div>
+                        <div class="buttons">
+                            <a href="films.html">
+                            <button>WATCH NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img width="70%" height="70%" src="hrd1.avif">
+                    <div class="content">
+                        <div class="author"> </div>
+                        <div class="title">HIRAK RAJAR DESHE</div>
+                        <div class="topic"></div>
+                        <div class="buttons">
+                            <a href="films.html">
+                            <button>WATCH NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img width="90%" height="90%" src="Aparajito (1).jpg">
+                    <div class="content">
+                        <div class="author"> </div>
+                        <div class="title">APARAJITA</div>
+                        <div class="topic"></div>
+                        
+                        <div class="buttons">
+                            <a href="films.html">
+                            <button>WATCH NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="item">
+                    <img src="image/img4.jpg">
+                    <div class="content">
+                        <div class="author"> </div>
+                        <div class="title">DESIGN SLIDER</div>
+                        <div class="topic"></div>
+                        
+                        <div class="buttons">
+                            <button>WATCH NOW</button>
+                           
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="pp.jpg">
+                    <div class="content">
+                        <div class="title">
+                            PATHER PANCHALI
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="hirak rajar deshe.webp">
+                    <div class="content">
+                        <div class="title">
+                            HIRAK RAJAR DESHE
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="aparajito.jpg">
+                    <div class="content">
+                        <div class="title">
+                            APARAJITA
+                        </div>
+    
+                    </div>
+                </div>
+                <!-- <div class="item">
+                    <img src="image/img4.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- next prev -->
+    
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
+    </div>
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+<script src="demo.js"></script>
+<script src="dscrpt.js"></script>
+</body>
+</html>
